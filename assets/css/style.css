@@ -458,7 +458,7 @@ select:nth-child(1) {
 }
 .list ul>li a{
     color: var(--text-light);
-    font-family: var(--font-family);git add
+    font-family: var(--font-family);
     font-size: var(--small-font);
     font-weight: var(--font-w-normal);
     letter-spacing: 1px;
@@ -512,12 +512,14 @@ hr{
     .hero-card-1>.box img{
         display: block;
     }
-    .btn-primary, .btn-secendary{
-       padding: 10px 18px;
+    .btn-primary{
+       padding: 12px 30px !important;
        font-size: 14px;
     }
-    .btn-secendary {
-        margin-left: 15px;
+    .btn-secendary{
+       padding: 10px 18px !important;
+       font-size: 14px;
+       margin-left: 15px;
     }
     .hero-card-1, .hero-card-2{
         width: 60%; 
@@ -560,9 +562,6 @@ hr{
     }
     form{
         width: 100%;
-    }
-    .calculate input{
-
     }
     .row{
         margin-top: 40px;
