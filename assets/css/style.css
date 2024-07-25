@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-family: "Herr Von Muellerhoff", cursive;
+}
+img{
+    max-width: 100%;
+}
+:root {
+    --primary-color: red;
+    --primary-light-color: #17181ad0;
+    --primary-extra-light: #35373b;
+    --secondary-color: #f9ac54;
+    --secondary-dark-color: #d79447;
+    --text-light: #949494;
+    --white: #ffffff;
+
+    /* font-family */
+    --font-family: "Poppins", sans-serif;
+    /* font-size */
+    --extra-larg-font: 4rem;   /* 65px */
+    --large-font: 2.8rem;  /* 45px */
+    --medime-font: 1.5rem;  /* 24px */
+    --small-font: 1rem;  /* 16px */
+    --normal-font: .8rem;  /* 14px */
+
+    /* font-weight  */
+    --font-w-extra-bold: 800;
+    --font-w-bold: 700;
+    --font-w-semebold: 600;
+    --font-w-medime: 500;
+    --font-w-normal:400;
+}
+
+body {
+    background: #000;
+}
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin-inline: auto;
+}
+section{
+    margin-top: 50px;
+}
+h2, h4{
+    color: var(--white);
+    font-family: var(--font-family);
+}
+p{
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-weight: var(--font-w-normal);
+}
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
+.btn{
+    align-items: center;
+    text-align: center;
+}
+.btn-primary, .btn-secendary {
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: var(--small-font);
+    font-weight: var(--font-w-bold);
+    letter-spacing: .5px;
+    padding: 14px 24px;
+    border-radius: 1.8rem;
+    outline: none;
+    cursor: pointer;
+}
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+}
+.btn-secendary {
+    font-family: var(--font-family);
+    background: transparent;
+    border: 1px solid #fff;
+    margin-left: 24px;
+}
+
+/* Nav-Bar Section start  */
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+.menu-bar  {
+    border: 1px solid #ffffff3d;
+    padding: 7px 5px  7px 0;
+    border-radius: 30px;
+    background: transparent;
+ }
+.menu-bar .nav-link{
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    font-size: var(--small-font);
+    font-weight: var(--font-w-medime);
+    letter-spacing: .7px;
+    margin-right: 30px;
+    align-items: center;
+    
+}
+.menu-bar .home{
+    background-color: var(--primary-color);
+    font-weight: var(--font-w-bold);
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+.logo{
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--large-font);
+    font-weight: var(--font-w-bold);
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+ /* Banner section  */
+.banner {
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.banner-container,
+.banner-img {
+    width: 50%;
+}
+.banner-container{
+    margin-right: 6rem;
+}
+.banner-title{
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: var(--extra-larg-font);
+    font-weight: var(--font-w-bold);
+    line-height: 4.7rem;
+    letter-spacing: .8px;
+}
+.banner-container .span{
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 95px;
+    font-weight: 400 !important;
+}
+.banner-desc{
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: var(--small-font);
+    line-height: 1.5rem;
+    letter-spacing: .8px;
+    padding-block: 1.5rem;
+}
+.banner-img{
+    border: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+}
+.banner-img img{
+    width: 100%;   
+    border: 1px solid #fff;   
+}
+.hero-image{
+    position: relative;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-card-1>.box{
+  background: red;
+  width: 35px;
+  height: 35px;   
+  border-radius: 50%;
+  position: relative;
+}
+.hero-card-1>.box img{
+    position: absolute;
+    width: 15px;
+    height: 15px;   
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.hero-card-1, 
+.hero-card-2{
+    width: 30%; 
+    align-items: center;
+    gap: .5rem;
+    background: #35373b9a;  
+    border-radius: 8px;
+    position: absolute;
+}
+.hero-card-1{
+    top: 70%;
+    left: -15%;
+    padding: 1rem .8rem;
+}
+.hero-card-2{
+    top: 20%;
+    right: 0%;
+    padding-block: 1rem;
+    padding-inline: .8rem;
+}
+.hero-card-1 small, .hero-card-2  small{
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: var(--normal-font);
+    font-weight: 300;
+    letter-spacing: .8px;
+}
+.hero-card-1 h4, .hero-card-2 h4{
+    font-family: var(--font-family);
+    font-size: var(--medime-font);
+    font-weight: var(--font-w-semebold);
+    line-height: 20px;
+}
+ /* Service section  */
+.section-titel, .section-desc {
+    text-align: center;
+}
+.section-titel{
+    font-size: var(--medime-font);
+    font-weight: var(--font-w-bold);
+    letter-spacing: .8px;
+}
+.section-desc, .card-desc, .about-desc{
+    font-size: var(--normal-font);
+    font-weight: var(--font-w-normal);
+    line-height: 24px;
+    letter-spacing: .8px;
+    padding-block: .8rem;
+ }
+.card {
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    border: 1px solid;
+ }
+.card-body {
+    text-align: center;
+}
+.card-title{
+    font-size: var(--small-font);
+    font-weight: var(--font-w-normal);
+    letter-spacing: .8px;
+    margin-top: 0.8rem;
+}
+
+    /* About Section  */
+.about-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    place-items: center;
+    padding: 35px 20px;
+    background: var(--primary-light-color);
+    border-radius: 10px;
+     /* border: 1px solid red; */
+    /* box-shadow: rgba(0, 175, #060636, alpha); */
+}
+.about-text-box {
+    border: 1px solid red;
+}
+.about-img {
+    /* width: 300px; */
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /* Traning and Exercise section  */
+.traning-card {
+    margin-top: 1.5rem;
+}    
+.traning-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+.row-1
+{
+    grid-template-columns: 1fr 3fr 2fr;
+}
+.row-2
+{
+    grid-template-columns: 3fr 2fr 1fr;
+}
+/* .row-1{
+
+    grid-template-columns: 0.60fr 1.3fr 0.75fr;
+}
+.row-2{
+    grid-template-columns: 1.1fr 0.65fr 0.85fr;
+} */
+.glary{
+    position: relative;
+}
+.img-text::before, .img-title::before{
+    content: '';
+    background: rgba(135, 207, 235, 0.692);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.img-text p {
+    color: #fff;
+    font-weight: var(--font-w-bold);
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+.img-title p {
+    color: #fff;
+    font-weight: var(--font-w-bold);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+    /* <!-- Calculator section  --> */
+.bmi-content {
+    justify-content: center;
+    padding-block: 50px;
+}
+.calculate-desc{
+    margin-bottom: 1.8rem;
+}
+.calculator-card{
+    background: var(--primary-light-color);
+    padding-block: 2.8rem;
+}
+.container-box {
+    grid-template-columns: 1.5fr 2fr;
+    border: 1px solid red;
+    gap: 1.8rem;
+}
+.chirt h4{
+    font-size: var(--medime-font);
+    font-weight: var(--font-w-bold);
+    margin-bottom: 2rem;
+}
+table{
+    width: 80%;
+}
+table td, th{
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .9rem;
+    letter-spacing: 1px;
+}
+table td {
+    color: #949494;
+}
+.calculate {
+    border: 1px solid red;
+}
+.calculate h4{
+    font-size: var(--medime-font);
+    font-weight: var(--font-w-bold);
+}
+form {
+    margin-bottom: 1.5rem;
+}
+input,
+select { 
+    background: #35373b;
+    height: 50px;
+    font-family: var(--font-family);
+    font-size: var(--normal-font);
+    width: calc((100% - 16px) / 2);
+    padding: 12px 16px;    
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+input{
+    margin-right: 10px;
+}
+input:nth-child(2){
+    margin-right: 0;
+}
+select:nth-child(1) {
+    margin-right: 0;
+}
+.search {
+    width: 100%;
+    margin-left: 0;
+}
+::placeholder, select{
+    color: var(--text-light);  
+    font-family: var(--font-family); 
+}
+.cl-btn{
+    padding-inline: 4rem !important;
+    font-weight: var(--font-w-medime);
+}
+
+    /* Meet our Team  */
+.row{
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+     background: var(--primary-light-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+.team-card{
+    position: relative;
+}
+.team-card img{
+    width: 100%;
+    filter: brightness(70%);
+    border-radius: 15px;
+    /* border: 1px solid red; */
+}
+.trainer-name{
+    position: absolute;
+    right: 50%;
+    bottom: 30px;
+    left: 16px;
+}
+    /* footer section  */
+#footer {
+    margin-top: 60px;
+    background: var(--primary-light-color);
+}
+.footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-block: 1.8rem;
+}
+.get-list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.list h4{
+    font-size: var(--medime-font);
+    margin-bottom: 1.8rem;
+}
+.list ul>li{
+    margin-bottom: .5rem;
+}
+.list ul>li a{
+    color: var(--text-light);
+    font-family: var(--font-family);git add
+    font-size: var(--small-font);
+    font-weight: var(--font-w-normal);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid #35373b;
+}
+.copy_right{
+    text-align: center;
+    padding-block: 20px;
+    letter-spacing: 1px;
+}
+.humber img{
+    width: 30px;
+    height: 30px;
+}
+.humber{
+    display: none;
+}
+
+/* Media screen and Mobile  */
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 15px;
+    }
+    .humber{
+        display: block;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-container,
+    .banner-img {
+        width: 100%;
+    }
+    .banner-container{
+        margin-right: 0;
+        margin-bottom: 1.8rem;
+    }
+    .banner-title{
+        font-size: var(--large-font);
+        font-weight: var(--font-w-bold);
+        line-height: 3.7rem;
+    }
+    .hero-card-1>.box img{
+        display: block;
+    }
+    .btn-primary, .btn-secendary{
+       padding: 10px 18px;
+       font-size: 14px;
+    }
+    .btn-secendary {
+        margin-left: 15px;
+    }
+    .hero-card-1, .hero-card-2{
+        width: 60%; 
+    }
+    .hero-card-1{
+        top: 70%;
+        left: 0;
+        padding: 1rem .8rem;
+    }
+    .card{
+         grid-template-columns: repeat(1, 1fr);
+    }
+    .about-container {
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .row-1,
+    .row-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        /* width: 100%; */
+    }
+    .bmi-content {
+        padding-block: 0px;
+    }
+    table th{
+        font-size: .8rem;
+    }
+    table td{
+        font-size: .7rem;
+    }
+    .chirt {
+        width: 100%;
+    }
+    table {
+        width: 90%;
+    }
+    form{
+        width: 100%;
+    }
+    .calculate input{
+
+    }
+    .row{
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+   
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .get-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .copy_right{
+        text-align: left;
+    }
+}
+
+/* Media screen and Tablet */
+@media screen and (min-width: 576px) and (max-width:992px){
+    .container{
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 15px;
+    }
+    .humber{
+        display: block;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .nav-bar {
+        margin-bottom: 2rem;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-container,
+    .banner-img {
+        width: 100%;
+    }
+    .banner-container{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .banner-title{
+        font-size: var(--large-font);
+        font-weight: var(--font-w-bold);
+        line-height: 3.7rem;
+    }
+    .btn-primary, .btn-secendary{
+       padding: 10px 18px;
+       font-size: 14px;
+    }
+    .btn-secendary {
+        margin-left: 15px;
+    }
+    .hero-card-1, .hero-card-2{
+        width: 30%; 
+    }
+    .hero-card-1{
+        top: 70%;
+        left: 0;
+        padding: 1rem .8rem;
+    }
+    .card{
+         grid-template-columns: repeat(2, 1fr);
+    }
+    .about-container {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .row-1,
+    .row-2{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        /* width: 100%; */
+    }
+    .bmi-content {
+        padding-block: 0px;
+    }
+    table th{
+        font-size: .8rem;
+    }
+    table td{
+        font-size: .7rem;
+    }
+    .chirt {
+        width: 100%;
+    }
+    table {
+        width: 90%;
+    }
+    form{
+        width: 100%;
+    }
+    .calculate input{
+
+    }
+    .row{
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-container .footer{
+        width: 600px;
+    }
+    .copy_right{
+        text-align: left;
+    }
+}
+    /* @media screen Loptop device  */
+
+@media screen and (min-width: 993px) {
+    .nav-bar {
+        margin-bottom: 2rem;
+    }
+    .hero-card-1, .hero-card-2{
+        width: 35%; 
+    }
+
+}
