@@ -166,6 +166,7 @@ main, footer{
 .banner-container .span{
     color: #fffffff1;
     font-family: "Grey Qo", cursive;
+    /* font-family: "maima", sans-serif; */
     font-size:  200px;
     font-weight: 400 !important;
 }
@@ -499,7 +500,7 @@ select:nth-child(1) {
 }
 .trainer-name{
     position: absolute;
-    right: 50%;
+    right: 0%;
     left: 10%;
     bottom: 10%;
 }
@@ -723,7 +724,6 @@ hr{
     }
     .team-card img{
         width: 100%;
-        /* height: 100%; */
         height: 250px;
     }
     .trainer-name {
